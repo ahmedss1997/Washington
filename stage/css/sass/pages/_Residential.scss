@@ -1,0 +1,124 @@
+
+// Start Stock Section
+
+section.stock-Residential {
+  .shutter {
+    width: 100%;
+    height: 360px;
+    background-color: $other-color;
+    // background: url(../imges/DlrPhoto.png);
+    // background-size: cover;
+    position: relative;
+    // @media (max-width: 1200px) {
+    //   height: 300px;
+    // }
+    // @media (max-width: 991px) {
+    //   height: 230px;
+    // }
+    // @media (max-width: 768px) {
+    //   height: 160px;
+    // }
+    // @media (max-width: 500px) {
+    //   height: 130px;
+    // }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    button {
+      width: 210px;
+      height: 60px;
+      font-size: 28px;
+      font-weight: bold;
+      background-color: #FFFDFC;
+      // color: #898989;
+      color: $blue-color;
+      border: 1px solid $second-color;
+      opacity: .6;
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      @extend  %uppercase;
+      @media (max-width: 768px) {
+        width: 140px;
+        height: 45px;
+        font-size: 18px;
+      }
+      // @media (max-width: 500px) {
+      //   width: 140px;
+      //   height: 35px;
+      // }
+    }
+  }
+}
+
+// End Stock Section
+
+
+// Start Residential content
+
+section.Residential {
+  padding: 60px 0px;
+  background-color: $light-color;
+  .list-tabs {
+    ul {
+      list-style: none;
+      padding: 0;
+      border: 3px solid #e6e6e6;
+      li {
+        border-bottom: 3px solid #e6e6e6;
+        letter-spacing: .5px;
+        padding: 16px 20px;
+        background: linear-gradient(to bottom,#fbfbfb 0%,#f1f1f1 100%);
+        cursor: pointer;
+        @extend %transition;
+        &:hover {
+          background: $main-color;
+          a {
+            color: $other-color;
+          }
+        }
+        a {
+          color: $second-color;
+          font-weight: bold;
+          font-size: 18px;
+          text-decoration: none;
+          @extend  %uppercase;
+          @extend %transition;
+        }
+      }
+    }
+  }
+  .phoot {
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .text-columnn {
+    margin-bottom: 70px;
+    h2.head-border-blue {
+      text-align: center;
+      font-weight: bold;
+      color: $second-color;
+      @extend  %uppercase;
+      &.head-border-blue {
+        &:after {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    p {
+      color: $second-color;
+    }
+  }
+  p {
+    color: $second-color;
+  }
+}
+
+
+// End Residential content
+
+

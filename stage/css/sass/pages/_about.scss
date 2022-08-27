@@ -1,0 +1,164 @@
+
+
+// Start Stock-about  Section
+
+section.stock-about {
+  .shutter {
+    width: 100%;
+    height: 360px;
+    background-color: $other-color;
+    background: url(../imges/slide_4-1.jpg);
+    background-size: cover;
+    position: relative;
+    @media (max-width: 991px) {
+      height: 300px;
+    }
+    @media (max-width: 768px) {
+      height: 200px;
+    }
+    @media (max-width: 500px) {
+      height: 130px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    button {
+      width: 175px;
+      height: 60px;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #FFFDFC;
+      color: #898989;
+      border: 1px solid #FFFDFC;
+      opacity: .6;
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      @extend  %uppercase;
+      @media (max-width: 768px) {
+        width: 140px;
+        height: 45px;
+        font-size: 18px;
+        top: 100px;
+      }
+      @media (max-width: 500px) {
+        width: 120px;
+        height: 35px;
+        top: 45px;
+      }
+    }
+  }
+}
+
+// End Stock-about  Section
+
+
+// Start about-services Section
+
+section.about-services {
+  padding: 40px 0px;
+  background-color: $blue-color;
+  color: $other-color;
+  .part {
+    display: flex;
+    .content {
+      margin-left: 25px;
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        @extend %transition;
+        @extend  %uppercase;
+        &:hover {
+          color: $sub-color;
+        }
+      }
+      p {
+        line-height: 1.5;
+        color: $second-color;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+// End about-services Section
+
+
+// Start About-Us Section 
+
+.about-us {
+  margin-bottom: 40px;
+  padding: 70px 0;
+  .h1 {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -3px;
+    font-weight: 900;
+    font-size: 62px;
+    @media (max-width: 768px) {
+      font-size: 42px;
+    }
+  }
+  hr {
+    width: 70%;
+  }
+  h3 {
+    @extend  %uppercase;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+  img {
+    width: 900px;
+  }
+}
+
+// End About-Us Section
+
+
+// Start About-Ceo Section
+
+.about-ceo {
+  padding: 80px 0px;
+  background-color: #eee;
+  min-height: 300px;
+  img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+  .lead {
+    line-height: 1.8;
+  }
+  button {
+    width: 175px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background-color: $main-color;
+    color: $other-color;
+    border: 1px solid $main-color;
+    @extend  %uppercase;
+    @extend %transition;
+    &:hover {
+      background-color: $other-color;
+      color: $main-color;
+      border: 1px solid $main-color;
+    }
+  }
+}
+
+// End About-Ceo Section

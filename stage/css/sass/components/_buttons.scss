@@ -1,0 +1,48 @@
+
+#scroll-top {
+  width: 50px;
+  height: 50px;
+  background-color: $main-color;
+  border-radius: 5px;
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  z-index: 30;
+  display: none;
+  cursor: pointer;
+  i {
+    height: 100%;
+    line-height: 50px;
+    padding-left: 17px;
+    color: $other-color;
+  }
+}
+
+
+.container {
+  .ggo {
+    margin: 0 auto;
+    text-align: center;
+    button.forrmm {
+      margin: 0 auto;
+      margin-bottom: 40px;
+      padding: 10px 20px;
+      @extend %uppercase;
+      @extend %transition;
+      background-color: $sub-color;
+      color: $other-color;
+      border: 1px solid $sub-color;
+      &:hover {
+        background-color: $other-color;
+        color: $sub-color;
+        a {
+          color: $sub-color;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $other-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+
+section.big-form {
+  background-color: $other-color;
+  padding: 80px 0;
+  .main-section {
+    background-color: $light-color;
+    padding: 30px 0;
+    padding-bottom: 80px;
+    .h3 {
+      text-align: center;
+      font-weight: bold;
+      @extend  %uppercase;
+      &.head-border-blue {
+        &:after {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .container {
+      .contain-form {
+        background-color: $other-color;
+        color: $second-color;
+        padding: 30px 20px;
+        h5, h6 {
+          font-weight: bold;
+        }
+        .checkbox {
+          input {
+            margin-right: 10px;
+          }
+          label {
+            font-weight: bold;
+          }
+        }
+        h6 {
+          margin-bottom: 20px;
+        }
+        input[type="text"] {
+          width: 50%;
+          outline: none;
+          margin-bottom: 10px;
+        }
+        form {
+          .all-forms {
+            display: flex;
+            margin-bottom: 20px;
+            &:first-of-type {
+              @media (max-width: 991px) {
+                margin-left: 0px;
+                margin-bottom: 0px;
+              }
+            }
+            @media (max-width: 991px) {
+              display: block;
+            }
+            .form-main {
+              width: 50%;
+              @media (max-width: 991px) {
+                width: auto;
+              }
+              label {
+                margin-right: 15px;
+                margin-top: 5px;
+                font-weight: bold;
+              }
+              .input-groups {
+                display: flex;
+                span {
+                  border: 1px solid #ced4da;
+                  padding: 6px 12px;
+                }
+                input {
+                  width: 80%;
+                  border: 1px solid #ced4da;
+                  padding: 6px 12px;
+                  outline: none;
+                  margin-bottom: 0px;
+                }
+                i.check1 {
+                  position: relative;
+                  right: 70px;
+                  top: 10px;
+                  color: green;
+                  opacity: 0;
+                }
+                i.check2 {
+                  position: relative;
+                  right: 70px;
+                  top: 10px;
+                  color: red;
+                  opacity: 0;
+                }
+              }
+              .validation-msg.empty {
+                color: #F00;
+                margin-top: 10px;
+                display: none;
+              }
+              &.has-words-right {
+                label {
+                  color: green;
+                }
+                .input-groups {
+                  span {
+                    background-color: #e6f5c7;
+                    border: 1px solid green;
+                    i {
+                      color: green;
+                    }
+                  }
+                  input {
+                    border: 1px solid green;
+                  }
+                  .valid-icon-1 {
+                    opacity: 1;
+                  }
+                }
+              }
+              &.has-words-wrong {
+                label {
+                  color: red;
+                }
+                .input-groups {
+                  span {
+                    background-color: #f5d2d7;
+                    border: 1px solid red;
+                    i {
+                      color: red;
+                    }
+                  }
+                  input {
+                    border: 1px solid red;
+                  }
+                  .valid-icon-2 {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+          button {
+            width: 150px;
+            height: 40px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            background-color: $main-color;
+            color: $other-color;
+            border: 1px solid $main-color;
+            @extend %transition;
+            &:hover {
+              background-color: $other-color;
+              color: $main-color;
+              border: 1px solid $main-color;
+              a {
+                color: $main-color;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      h2 {
+        color: $gray-color;
+        margin-top: 15px;
+        margin-left: 10px;
+        font-weight: bold;
+        @extend  %uppercase;
+      }
+      p {
+        color: $gray-color;
+        span {
+          color: #337ab7;
+          font-weight: bold;
+          cursor: pointer;
+          @extend %transition;
+          &:hover {
+            color: $blue-color;
+          }
+        }
+      }
+      .seleect {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      h4 {
+        color: $gray-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+

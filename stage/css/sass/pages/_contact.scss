@@ -1,0 +1,227 @@
+
+// Start Stock Section
+
+
+section.stock {
+  .shutter {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-color: $other-color;
+    @media (max-width: 768px) {
+      height: 65%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    button {
+      width: 175px;
+      height: 60px;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #FFFDFC;
+      border: 1px solid #FFFDFC;
+      opacity: .6;
+      position: absolute;
+      top: 325px;
+      right: 45%;
+      color: #898989;
+      @extend  %uppercase;
+      @media (max-width: 768px) {
+        width: 175px;
+        height: 60px;
+        font-size: 24px;
+        right: 37%;
+        bottom: 0;
+        top: 330px;
+      }
+      @media (min-width: 551px)  and (max-width: 650px) {
+        width: 150px;
+        height: 45px;
+        font-size: 20px;
+        right: 35%;
+        bottom: 0;
+        top: 260px;
+      }
+      @media (min-width: 501px)  and (max-width: 550px) {
+        width: 150px;
+        height: 45px;
+        font-size: 20px;
+        right: 35%;
+        bottom: 0;
+        top: 240px;
+      }
+      @media (max-width: 500px) {
+        width: 135px;
+        height: 40px;
+        font-size: 18px;
+        right: 27%;
+        bottom: 0;
+        top: 160px;
+      }
+    }
+  }
+}
+
+
+// End Stock Section
+
+
+// Start Contact Form
+
+section.contact-us {
+  padding: 100px 0;
+  background-color: $light-color;
+  .map {
+    text-align: center;
+    iframe {
+      margin-bottom: 30px;
+      width: 80%;
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .all-forms {
+    display: flex;
+    margin-bottom: 40px;
+    &:first-of-type {
+      margin-left: 100px;
+      @media (max-width: 991px) {
+        margin-left: 0px;
+        margin-bottom: 0px;
+      }
+    }
+    @media (max-width: 991px) {
+      display: block;
+    }
+    .form-main {
+      width: 50%;
+      @media (max-width: 991px) {
+        width: auto;
+      }
+      // display: flex;
+      label {
+        margin-right: 15px;
+        margin-top: 5px;
+        font-weight: bold;
+      }
+      .input-groups {
+        display: flex;
+        span {
+          border: 1px solid #ced4da;
+          padding: 6px 12px;
+        }
+        input {
+          width: 80%;
+          border: 1px solid #ced4da;
+          padding: 6px 12px;
+          outline: none;
+        }
+        i.check1 {
+          position: relative;
+          right: 70px;
+          top: 10px;
+          color: green;
+          opacity: 0;
+        }
+        i.check2 {
+          position: relative;
+          right: 70px;
+          top: 10px;
+          color: red;
+          opacity: 0;
+        }
+      }
+      .validation-msg.empty {
+        color: #F00;
+        margin-top: 10px;
+        display: none;
+      }
+      &.has-words-right {
+        label {
+          color: green;
+        }
+        .input-groups {
+          span {
+            background-color: #e6f5c7;
+            border: 1px solid green;
+            i {
+              color: green;
+            }
+          }
+          input {
+            border: 1px solid green;
+          }
+          .valid-icon-1 {
+            opacity: 1;
+          }
+        }
+      }
+      &.has-words-wrong {
+        label {
+          color: red;
+        }
+        .input-groups {
+          span {
+            background-color: #f5d2d7;
+            border: 1px solid red;
+            i {
+              color: red;
+            }
+          }
+          input {
+            border: 1px solid red;
+          }
+          .valid-icon-2 {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .textarea {
+    text-align: center;
+    h5 {
+      font-weight: bold;
+    }
+    textarea {
+      width: 600px;
+      height: 250px;
+      outline: none;
+      @media (max-width: 768px) {
+        width: 250px;
+      }
+    }
+    .validation-msg.empty {
+      color: #F00;
+      margin-top: 10px;
+      display: none;
+    }
+    button {
+      width: 400px;
+      height: 40px;
+      background-color: $main-color;
+      color: $other-color;
+      border: 1px solid $main-color;
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      font-weight: bold;
+      @extend %transition;
+      @extend  %uppercase;
+      @media (max-width: 768px) {
+        width: 260px;
+      }
+    }
+  }
+}
+
+// End Contact Form
+
+

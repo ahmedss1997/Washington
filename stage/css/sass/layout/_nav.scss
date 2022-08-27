@@ -1,0 +1,153 @@
+
+// Start Upper-bar
+
+.upper-barr {
+  height: 55px;
+  background-color: #ddd;
+  padding: 10px 0px;
+  @media (max-width: 992px) {
+    display: none;
+  }
+  .icon {
+    border-left: 1px solid $second-color;
+    border-right: 1px solid $second-color;
+    padding: 5px 15px;
+    i {
+      margin: 0px 5px;
+      cursor: pointer;
+      color: $second-color;
+      @extend %transition;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+  .num {
+    padding: 5px 0;
+    border-right: 1px solid $second-color;
+    i {
+      color: $main-color;
+      margin-right: 10px;
+    }
+    span {
+      color: $second-color;
+      cursor: pointer;
+      @extend %transition;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+  .mail {
+    padding: 5px 0;
+    i {
+      color: $main-color;
+      margin-right: 10px;
+    }
+    span {
+      color: $second-color;
+      cursor: pointer;
+      @extend %transition;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+// End Upper-bar
+
+
+// Start Navbar
+
+nav.bg-light {
+  background-color: #fff !important;
+  overflow: visible;
+  @media (max-width: 992px) {
+    position: static;
+    overflow: hidden;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -23px;
+    left: 70px;
+    border-bottom: 23px solid #fff;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    height: 0;
+    width: 328px;
+    z-index: 1;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  ul {
+    li.nav-item {
+      cursor: pointer;
+      a.nav-link {
+        @extend  %uppercase;
+        font-weight: bold;
+        color: $second-color;
+        @extend %transition;
+        &:hover {
+          color: $main-color;
+        }
+      }
+      &.active {
+        a.nav-link {
+          color: $main-color;
+        }
+      }
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+      .icon {
+        margin: 20px 0px;
+        i {
+          margin: 0px 5px;
+          cursor: pointer;
+          color: $second-color;
+          @extend %transition;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+      .num {
+        margin-bottom: 10px;
+        i {
+          color: $main-color;
+          margin-right: 10px;
+        }
+        span {
+          color: $second-color;
+          cursor: pointer;
+          @extend %transition;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+      .mail {
+        margin-bottom: 10px;
+        i {
+          color: $main-color;
+          margin-right: 10px;
+        }
+        span {
+          color: $second-color;
+          cursor: pointer;
+          @extend %transition;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// End Navbar

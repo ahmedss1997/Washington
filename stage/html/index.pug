@@ -1,0 +1,340 @@
+doctype html
+html(lang="en", dir="ltr")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/animate.css")
+    link(rel="stylesheet", href="css/all.min.css")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/master.css")
+    link(href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Reem+Kufi&display=swap" rel="stylesheet")
+    script(src="JS/html5shiv.min.js")
+    script(src="JS/respond.min.js")
+    title Washingation
+  body
+    
+    include layout/navs
+    
+    include layout/header
+
+
+
+    // Start About Section
+
+    section.about
+      .container
+        .row
+          .col-md-5
+            img(src="imges/about.png", alt="", class="wow fadeInRight" data-wow-duration="1s" data-wow-offset="300")
+          .col-md-7
+            h3(class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="300" ) Leading A/C and Heating Contractor in Seattle
+            p(class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="300" ) When your Heating and Air Conditioning systems are functioning at its best, it not only creates a comfortable environment, it also protects your home or office from humidity and moisture problems, increases indoor air quality and reduces energy costs. We carry the top furnaces, heat pumps, water tanks, fireplaces and AC units, from America’s most trusted name brands. Washington Natural Gas is the greater Seattle areas choice for fast, friendly and affordable HVAC service. We are the leading heating contractor Seattle.
+            p(class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="300" ) Washington Natural Gas Heating & Air Conditioning supplies air conditioning and heating repair and also installation services in Seattle. We are one of the top air conditioning companies in Seattle that is devoted to quality in our service, as well as we mount high quality brand names.
+
+
+    // End About Section
+
+    // Start Cooling Section
+
+    section.cooling
+      h2.head-border-blue our hvac services
+      .container
+        .row
+          .col-lg-4.col-md-6(class="wow bounceInLeft" data-wow-duration="2.5s" data-wow-delay=".6s" data-wow-offset="300")
+            .flip-cardd
+              span.circle #[img(src="imges/service_13.png")]
+              h4 Repair
+              p For your complete residential heating and air conditioning repairs, let the professionals at Washington Natural Gas take care of you, for all your heating and cooling comfort needs. With our service team members,we will provide you with the best system for your needs at the best value.
+              span.normall  read more
+          .col-lg-4.col-md-6(class="wow bounceInLeft" data-wow-duration="2.5s" data-wow-delay=".4s" data-wow-offset="300")
+            .flip-cardd
+              span.circle #[img(src="imges/service_14.png")]
+              h4 Repair
+              p For your complete residential heating and air conditioning repairs, let the professionals at Washington Natural Gas take care of you, for all your heating and cooling comfort needs. With our service team members,we will provide you with the best system for your needs at the best value.
+              span.normall  read more
+          .col-lg-4.col-md-6(class="wow bounceInLeft" data-wow-duration="2.5s" data-wow-delay=".2s" data-wow-offset="300")
+            .flip-cardd
+              span.circle #[img(src="imges/service_15.png")]
+              h4 Repair
+              p For your complete residential heating and air conditioning repairs, let the professionals at Washington Natural Gas take care of you, for all your heating and cooling comfort needs. With our service team members,we will provide you with the best system for your needs at the best value.
+              span.normall  read more
+          .col-lg-4.col-md-6.offset-lg-4(class="wow bounceInRight" data-wow-duration="2.5s" data-wow-delay=".2s" data-wow-offset="300")
+            .flip-cardd
+              span.circle #[img(src="imges/download-2.png")]
+              h4 Repair
+              p For your complete residential heating and air conditioning repairs, let the professionals at Washington Natural Gas take care of you, for all your heating and cooling comfort needs. With our service team members,we will provide you with the best system for your needs at the best value.
+              span.normall  read more
+
+    // End Cooling Section
+
+    // Start Services Section
+
+    section.services
+      h2.head-border-white Heating & Ac Service Seattle
+      .container
+        p Areas We Serve: 
+        .row
+          .col-lg-7(class="wow pulse" data-wow-duration="1s" data-wow-offset="400" )
+            .row
+              .col
+                ul
+                  li Alderwood Manor
+                  li Lake Stevens
+                  li Des Moines
+                  li Arlington
+                  li Lynnwood
+                  li Duvall
+                  li Arlington Heights
+                  li Maltby
+                  li Eastgate
+              .col
+                ul
+                  li Brier
+                  li Martha Lake
+                  li East Hill-Meridian
+                  li Cathan
+                  li Covington
+                  li East Renton
+                  li Cathcart
+                  li Bellevue
+                  li Seattle
+              .col
+                ul
+                  li Echo Lake
+                  li Black Diamond
+                  li Clyde Hill
+                  li Edmonds
+                  li Bothell
+                  li Cottage Lake
+                  li Everett
+                  li Burien
+                  li Covington
+          .col-lg-5(class="wow pulse" data-wow-duration="1s" data-wow-offset="400" )
+            img(src="imges/imge.jpg", alt="")
+
+    // End Services Section
+
+    // Start Testimonials Section
+
+    section.testimonials
+      .container-fluid
+        .row
+          .col-lg-6(class="wow slideInLeft" data-wow-duration="2s" data-wow-delay=".7s" data-wow-offset="250")
+            h2 HVAC BRANDS WE SERVICE
+            .testimonial
+              .client.active
+                img(src='imges/Optimized.png' alt='')
+              .client.hidden
+                img(src='imges/Optimized-4.png' alt='')
+              .client.hidden
+                img(src='imges/Optimized-mitsubish.png' alt='')
+              .client.hidden
+                img(src='imges/payne-logo-orange.jpg' alt='')
+              i.fa.fa-chevron-right.fa-2x
+              i.fa.fa-chevron-left.fa-2x
+          .col-lg-6.gray(class="wow slideInRight" data-wow-duration="2s" data-wow-offset="250" )
+            h2 Testimonials
+            #sliderr.carousel.slide(data-ride='carousel')
+              ol.carousel-indicators
+                li.active(data-target='#sliderr' data-slide-to='0')
+                li(data-target='#sliderr' data-slide-to='1')
+                li(data-target='#sliderr' data-slide-to='2')
+                li(data-target='#sliderr' data-slide-to='3')
+                li(data-target='#sliderr' data-slide-to='4')
+                li(data-target='#sliderr' data-slide-to='5')
+                li(data-target='#sliderr' data-slide-to='6')
+                li(data-target='#sliderr' data-slide-to='7')
+                li(data-target='#sliderr' data-slide-to='8')
+                li(data-target='#sliderr' data-slide-to='9')
+                li(data-target='#sliderr' data-slide-to='10')
+                li(data-target='#sliderr' data-slide-to='11')
+              .carousel-inner
+                .carousel-item.active
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/woman.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star  
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star 
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star 
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/woman.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star  
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star 
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star 
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/woman.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star  
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star 
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+                .carousel-item
+                  .media
+                    img.mr-3(src='imges/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Media heading
+                      .stars
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star
+                        i.fas.fa-star 
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vel, quos harum esse minus alias.
+
+    // End Testimonials Section
+
+    // Start Contact Section
+
+    section.contact
+      .container
+        .row
+          .col
+            .banner(class="wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="200")
+              .row
+                .col-lg-3.hid
+                  img(src="imges/banner.png", alt="")
+                .col-lg-6
+                  h2 For Fast & Responsive Service
+                  p Call (425) 355-3331 | (206) 464-1999 or use the contact form
+                .col-lg-3
+                  button.hvr-wobble-horizontal Contact Us
+
+    // End Contact Section
+
+    include layout/footers
+
+    #scroll-top.hvr-buzz-out
+      i.fa.fa-chevron-up.fa-lg
+
+    .loading
+      .sk-circle
+        .sk-circle1.sk-child
+        .sk-circle2.sk-child
+        .sk-circle3.sk-child
+        .sk-circle4.sk-child
+        .sk-circle5.sk-child
+        .sk-circle6.sk-child
+        .sk-circle7.sk-child
+        .sk-circle8.sk-child
+        .sk-circle9.sk-child
+        .sk-circle10.sk-child
+        .sk-circle11.sk-child
+        .sk-circle12.sk-child
+    
+    include layout/footerscripts

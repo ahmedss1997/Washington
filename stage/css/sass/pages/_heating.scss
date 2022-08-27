@@ -1,0 +1,161 @@
+
+// Start Stock Section
+
+section.stock-heating {
+  .shutter {
+    width: 100%;
+    height: 360px;
+    background-color: $other-color;
+    background: url(../imges/heating.jpg);
+    background-size: cover;
+    position: relative;
+    @media (max-width: 1200px) {
+      height: 300px;
+    }
+    @media (max-width: 991px) {
+      height: 230px;
+    }
+    @media (max-width: 768px) {
+      height: 160px;
+    }
+    @media (max-width: 500px) {
+      height: 130px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    button {
+      width: 175px;
+      height: 60px;
+      font-size: 28px;
+      font-weight: bold;
+      background-color: #FFFDFC;
+      // color: #898989;
+      color: $blue-color;
+      border: 1px solid $second-color;
+      opacity: .6;
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      @extend  %uppercase;
+      @media (max-width: 991px) {
+        top: 90px;
+      }
+      @media (max-width: 768px) {
+        width: 140px;
+        height: 45px;
+        font-size: 18px;
+        top: 60px;
+      }
+      @media (max-width: 500px) {
+        width: 120px;
+        height: 35px;
+        top: 45px;
+      }
+    }
+  }
+}
+
+
+// End Stock Section
+
+
+// Start Cards Section
+
+section.heating-cardds {
+  padding: 60px 0;
+  background-color: $light-color;
+  .container {
+    .heating-text {
+      h2 {
+        text-align: center;
+        font-weight: bold;
+        color: $second-color;
+        @extend  %uppercase;
+        &.head-border-blue {
+          &:after {
+            margin-bottom: 30px;
+          }
+        }
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+      p.fir {
+        color: $second-color;
+        margin-bottom: 80px;
+        span {
+          color: #337ab7;
+          font-weight: bold;
+          cursor: pointer;
+          @extend %transition;
+          &:hover {
+            color: $blue-color;
+          }
+        }
+        span.black {
+          color: #000;
+        }
+      }
+    }
+    .flip-cardd {
+      background-color: $other-color;
+      padding: 0px 15px;
+      padding-bottom: 30px;
+      margin-bottom: 70px;
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      @extend %transition;
+      &:hover {
+        color: $other-color;
+        background-color: $main-color;
+        border: 1px solid $main-color;
+        span.circle {
+          border: 1px solid $main-color;
+        }
+        p, span.normall  {
+          color: $other-color;
+        }
+        i {
+          color: $main-color;
+        }
+      }
+      span.circle {
+        width: 110px;
+        height: 110px;
+        position: relative;
+        top: -50px;
+        background-color: $other-color;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        text-align: center;
+        display: inline-block;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      h4 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 20px;
+        @extend  %uppercase;
+      }
+      p {
+        color: $gray-color;
+      }
+      span.normall {
+        font-weight: bold;
+        color: $sub-color;
+        @extend  %uppercase;
+      }
+    }
+  }
+}
+
+
+// End Cards Section

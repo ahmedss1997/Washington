@@ -1,0 +1,404 @@
+
+// Start About Section
+
+section.about {
+  padding: 100px 0px;
+  .container {
+    .col-md-5 {
+      overflow: hidden;
+      perspective: 500px;
+      img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        @extend %transition;
+        &:hover {
+          transform:translate3d(0,0,-50px)
+        }
+      }
+    }
+    .col-md-7 {
+      padding-top: 50px;
+      h3 {
+        @media (max-width: 768px) {
+          text-align: center;
+          font-size: 24px;
+        }
+      }
+      p {
+        line-height: 2;
+        margin-top: 50px;
+        color: $gray-color;
+      }
+    }
+  }
+}
+
+// End About Section
+
+
+// Start Cooling Section
+
+section.cooling {
+  padding: 60px 0;
+  background-color: $light-color;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    @extend  %uppercase;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  .flip-cardd {
+    background-color: $other-color;
+    padding: 0px 15px;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    @extend %transition;
+    &:hover {
+      color: $other-color;
+      background-color: $main-color;
+      border: 1px solid $main-color;
+      span.circle {
+        border: 1px solid $main-color;
+      }
+      p, span.normall  {
+        color: $other-color;
+      }
+      i {
+        color: $main-color;
+      }
+    }
+    span.circle {
+      width: 110px;
+      height: 110px;
+      position: relative;
+      top: -50px;
+      background-color: $other-color;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      text-align: center;
+      display: inline-block;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    h4 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      @extend  %uppercase;
+    }
+    p {
+      color: $gray-color;
+    }
+    span.normall {
+      font-weight: bold;
+      color: $sub-color;
+      @extend  %uppercase;
+    }
+  }
+}
+
+// End Cooling Section
+
+
+// Start Services Section
+
+section.services {
+  padding: 60px 0px;
+  background-color: $blue-color;
+  h2 {
+    text-align: center;
+    color: $other-color;
+    @extend  %uppercase;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  .container {
+    p {
+      font-size: 26px;
+      font-weight: bold;
+      margin-left: 38px;
+      color: $other-color;
+    }
+    .row {
+      .row {
+        ul {
+          li {
+            margin-bottom: 15px;
+            color: $other-color;
+          }
+        }
+      }
+      .col-lg-5 {
+        overflow: hidden;
+        perspective: 500px;
+        img {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          @extend %transition;
+          &:hover {
+            transform:translate3d(0,0,50px)
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Services Section
+
+
+// Start Testimonials Section
+
+section.testimonials {
+  // padding: 40px  0px;
+  // background-color: $gray-color;
+  .container-fluid {
+    .row {
+      .gray {
+        height: 80vh;
+        padding: 60px 35px;
+        background-color: $light-color !important;
+        @media (max-width: 991px) {
+          text-align: center;
+        }
+        h2  {
+          font-weight: bold;
+          @extend  %uppercase;
+        }
+        #sliderr {
+          .carousel-item {
+            .media {
+              margin-bottom: 30px;
+              @media (max-width: 991px) {
+                display: block;
+              }
+              img {
+                width: 150px;
+                height: 150px;
+                cursor: pointer;
+              }
+              .media-body {
+                margin-top: 30px;
+                h5 {
+                  margin-bottom: 30px;
+                  cursor: pointer;
+                  @extend %transition;
+                  &:hover {
+                    color: $sub-color;
+                  }
+                }
+                .stars {
+                  i {
+                    font-size: 14px;
+                    margin: 0px 5px;
+                    color: $dark-color;
+                  }
+                }
+              }
+            }
+            p {
+              margin-bottom: 60px;
+            }
+          }
+          ol.carousel-indicators {
+            bottom: -100px;
+            @media (max-width: 768px) {
+              bottom: 0px;
+            }
+            li {
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              opacity: 1;
+              background-color: $main-color;
+              &.active {
+                background-color: $sub-color;
+              }
+            }
+          }
+        }
+      }
+      .col-lg-6 {
+        height: 80vh;
+        padding: 60px 35px;
+        background-color: $other-color;
+        @media (max-width: 991px) {
+          text-align: center;
+        }
+        h2  {
+          font-weight: bold;
+          @extend  %uppercase;
+          @media (max-width: 768px) {
+            font-size: 24px;
+          }
+        }
+        .testimonial {
+          text-align: center;
+          .client {
+            padding: 50px 0;
+            color: $other-color;
+            img {
+              width: 150px;
+              height: 150px;
+            }
+          }
+          .fa-chevron-right {
+            position: absolute;
+            // top: 50%;
+            right: 175px;
+            color: $gray-color;
+            @extend %transition;
+            cursor: pointer;
+            &:hover {
+              color: $main-color;
+            }
+            @media (max-width: 768px) {
+              right: 100px;
+            }
+          }
+          .fa-chevron-left {
+            position: absolute;
+            // top: 50%;
+            left: 175px;
+            color: $gray-color;
+            cursor: pointer;
+            @extend %transition;
+            &:hover {
+              color: $main-color;
+            }
+            @media (max-width: 768px) {
+              left: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Testimonials Section
+
+
+// Start Contact Section
+
+section.contact {
+  padding-top: 80px;
+  background-color: $light-color;
+  .container {
+    .banner {
+      height: 98px;
+      background-color: #0F637C;
+      @media (max-width: 992px) {
+        height: auto;
+        text-align: center;
+      }
+      .hid {
+        @media (max-width: 992px) {
+          display: none;
+        }
+      }
+      img {
+        margin-top: -35px;
+        margin-left: 40px;
+      }
+      h2 {
+        margin-top: 12px;
+        color: $other-color;
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+      p {
+        color: $other-color;
+      }
+      button {
+        width: 150px;
+        height: 40px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: $sub-color;
+        color: $other-color;
+        border: 1px solid $sub-color;
+        @extend %transition;
+        &:hover {
+          background-color: $other-color;
+          color: $sub-color;
+          border: 1px solid $sub-color;
+        }
+      }
+    }
+  }
+}
+
+// End Contact Section
+
+
+// Start Footer
+
+footer {
+  padding: 70px 0px;
+  background-color: #161616;
+  img.sevnty {
+    width: 70% !important;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: $other-color;
+  }
+  .phon {
+    float: $float-left;
+    width: 40%;
+    i {
+      width: 18px;
+      height: 18px;
+      font-size: 14px;
+      border-radius: 3px;
+      text-align: center;
+      background-color: $second-color;
+    }
+    span {
+      color: $other-color;
+      font-size: 12px;
+    }
+  }
+  h2 {
+    color: $blue-color;
+    margin-top: 20px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #000;
+  height: 70px;
+  padding: 20px 60px;
+  @media (max-width: 768px) {
+    padding: 20px 30px;
+  }
+  p {
+    color: $other-color;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+// End Footer
+
+
